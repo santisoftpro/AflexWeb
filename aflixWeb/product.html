@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AflixWeb</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+      <!-- heade section start -->
+      <header class="flex-div">
+        <div class="nav-left flex-div">
+            <img src="images/logo.png" class="logo">
+        </div>
+        <div class="nav-middle">
+            <ul class="desktop-nav">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Music</a></li>
+                <li><a href="#">Edication</a></li>
+                <li><a href="#">Event</a></li>
+            </ul>
+            <ul class="mobile-list">
+                <li><i class="fa fa-home"></i></li>
+                <li><i class="fa fa-cogs"></i></li>
+                <li><i class="fa fa-phone-square"></i></li>
+                <li><i class="fa fa-user"></i></li>
+                <li><i class="fa fa-bars"></i></li>
+            </ul>
+        </div>
+
+        <div class="nav-right flex-div">
+            <img src="images/search.png">
+            <img src="images/Jack.png" class="user">
+            <button class="btn">SignIN</button>
+            <button class="btn">SignUp</button>
+        </div>
+    </header>
+    <!-- header section ends -->
+
+<!-- product page -->
+
+
+<section id="prodetails">
+    <div class="single-pro-image">
+        <img src="images/slide1.jpg" width="100%" id="MainImg">
+        <div class="small-img-group">
+            <div class="small-img-col">
+                <img src="images/thumbnail2.png" width="100%" class="small-img" alt="">
+            </div>
+            <div class="small-img-col">
+                <img src="images/thumbnail1.png" width="100%" class="small-img" alt="">
+            </div>
+            <div class="small-img-col">
+                <img src="images/thumbnail3.png" width="100%" class="small-img" alt="">
+            </div>
+            <div class="small-img-col">
+                <img src="images/thumbnail4.png" width="100%" class="small-img" alt="">
+            </div>
+        </div>
+        
+    </div>
+    <div class="single-pro-details">
+         <h6>FLEX / T-Videos</h6>
+         <h4>Men's Fashion</h4>
+         <h2>$139.00</h2>
+         <select>
+            <option>Select Sixe</option>
+            <option>XL</option>
+            <option>XXL</option>
+            <option>Small</option>
+            <option>Large</option>
+         </select>
+         <input type="number" value="1">
+         <button>Add Vido</button>
+         <h4>Product Details</h4>
+         <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Ducimus possimus dolores dicta quo, libero animi vel cupiditate repudiandae ad enim 
+            quibusdam voluptate? Nisi ea nihil repellendus atque numquam veritatis aut?</span>
+    </div>
+
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Footer start -->
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col">
+                    <h4>company</h4>
+                    <ul>
+                        <li><a href="#">about us</a></li>
+                        <li><a href="#">our services</a></li>
+                        <li><a href="#">privacy policy</a></li>
+                        <li><a href="#">affiliate program</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>get help</h4>
+                    <ul>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">shipping</a></li>
+                        <li><a href="#">returns</a></li>
+                        <li><a href="#">order status</a></li>
+                        <li><a href="#">payment options</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>online shop</h4>
+                    <ul>
+                        <li><a href="#">watch</a></li>
+                        <li><a href="#">bag</a></li>
+                        <li><a href="#">shoes</a></li>
+                        <li><a href="#">dress</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>follow us</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- last menu navbar -->
+
+    <!-- last menu navbar ends -->
+    <!-- Footer ends -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-element-bundle.min.js"></script>
+    <!-- custom script -->
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/script.js"></script>
+    <script>
+        var MainImg = document.getElementById("MainImg");
+        var smallimg = document.getElementsByClassName("small-img");
+        smallimg[0].onclick = function(){
+            MainImg.src = smallimg[0].src;
+        }
+        smallimg[1].onclick = function(){
+            MainImg.src = smallimg[1].src;
+        }
+        smallimg[2].onclick = function(){
+            MainImg.src = smallimg[2].src;
+        }
+        smallimg[3].onclick = function(){
+            MainImg.src = smallimg[3].src;
+        }
+    </script>
+</body>
+</html>
